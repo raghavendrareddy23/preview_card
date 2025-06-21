@@ -1,0 +1,140 @@
+/* Reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #0d192b;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Card styling */
+.card {
+    background-color: #15273f;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card__images {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card__images img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Layer to show eye icon on hover */
+.card__images-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 255, 247, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card__images:hover .card__images-layer {
+    opacity: 1;
+}
+
+.card__images-layer img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Title */
+.card__title h1 {
+    font-size: 25px;
+    margin: 20px 0 10px;
+    color: white;
+}
+
+.card__text{
+    font-size: 16px;
+    color: #8bacda;
+    margin: 10px 0;
+}
+/* Time and ETH info */
+.card__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8bacda;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card__time-left,
+.card__time-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__time-left h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #00fff7;
+}
+.card__time-right h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Creator info */
+.card__creator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card__creator img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.card__creator p {
+    color: #8bacda;
+    font-size: 14px;
+}
+
+.card__creator b {
+    color: white;
+}
+
+.attribution{
+    padding-top: 1rem;
+    text-align: center;
+}
+.attribution a{
+    color: #00fff7;
+    font-weight: bold;
+}
+hr {
+    border: 1px solid #2f415b;
+    margin: 10px 0;
+}
