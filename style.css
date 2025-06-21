@@ -70,7 +70,7 @@ body {
     color: white;
 }
 
-.card__text{
+#info{
     font-size: 16px;
     color: #8bacda;
     margin: 10px 0;
@@ -92,12 +92,12 @@ body {
     gap: 5px;
 }
 
-.card__time-left h3 {
+.card__time-left span {
     font-size: 14px;
     font-weight: 500;
     color: #00fff7;
 }
-.card__time-right h3{
+.card__time-right span{
     font-size: 14px;
     font-weight: 500;
 }
